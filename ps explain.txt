@@ -1,0 +1,68 @@
+
+### STEP 1 Interprete the Diagram and extract the neccessary information
+
+The Unicorn Project contains the following
+
+Resource group = UNICORN-RG
+VNET = UNICORN-VNET , address space = 192.168.100.0/24 with three subnets
+
+App-Subnet
+192.168.100.16/28
+
+Web-Subnet
+192.168.100.0/28
+
+Db-Subnet
+192.168.100.32/28
+
+Web-Subnet hosting : Vm : Unicorn-web with the properties:
+Ubuntu server 20.04LTS
+ssh-key auth 
+Public IP
+Username:unicorn
+Private ip :192.168.100.4
+Vm Size : Standard_B1s
+
+App-Subnet hosting : Vm : Unicorn-app with the properties:
+Windows server 2019 datacenter 
+generic password : rG9&+q-XDP6H2#UF
+Public IP
+Username:unicorn
+Private ip :192.168.100.20
+Vm Size : Standard_B1s
+
+Db-Subnet hosting : Vm : Unicorn-db with the properties:
+Rhel 8.2 LVM
+ssh-key auth 
+NO Public IP
+Username:unicorn
+Private ip :192.168.100.36
+Vm Size : Standard_B1s
+
+### STEP 2 Declare all common initial variables
+$RG = "UNICORN-RG"
+$location='northeurope'
+
+# Create user object (to generate password https://passwordsgenerator.net/)
+$userName='unicorn'
+$securePassword = ConvertTo-SecureString 'rG9&+q-XDP6H2#UF' -AsPlainText -Force;
+$cred = New-Object System.Management.Automation.PSCredential ($userName, $securePassword);
+
+STEP 3 
+### Get Script for VNET AND SUBNET CREATION
+https://docs.microsoft.com/en-us/azure/virtual-network/scripts/virtual-network-powershell-sample-multi-tier-application
+
+Edit the VNET to suit and subnet config to suit our environment
+
+Create VNET 
+Write-Output -InputObject "UNICORN-VNET created successfully"
+
+Based on the link, create NSG for each subnet, attach NSG to each subnet
+
+Create Nic and pIp as well
+For the VM creation, use the below idea for the two  linux
+
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-quick-create-vm-linux-powershell?view=azs-2108&tabs=az1%2Caz2%2Caz3%2Caz4%2Caz5%2Caz6%2Caz7%2Caz8
+https://docs.ukcloud.com/articles/azure/azs-how-create-vm-ps.html?tabs=tabid-1
+https://docs.microsoft.com/en-us/powershell/module/az.compute/new-azvm?view=azps-8.0.0
+

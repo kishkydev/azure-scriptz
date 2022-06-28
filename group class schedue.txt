@@ -1,0 +1,124 @@
+REMEDIATION TO DISCUSS.
+
+FRAMEWORK:
+
+LEARN : 25%
+REFLECT: 25% VIDEO
+IMPLEMENT: 25% LABS
+SHARE: 25%
+
+
+ADMIN : DESIGN,DEPLOY, CONFIGURE, MANAGE, MONITOR
+
+
+PRIVATE CLOUD : 
+
+PBLIC CLOUD : Multi tenant cloud
+
+HYBRID
+
+B2B :
+
+
+1. IDENTITY : WHO ARE YOU AND WHAT YOU HAVE ACCESS TO : AUTHENTICATION + AUTHORIZATION : az104clazz.onmicrosoft.com
+
+SETTING UP MY NEW ORG : az104class.com : Go daddy, who go host,
+CREATE A DOMAIN NAME
+CREATE A DEFAULT AZURE AD
+CUSTOMIZE MY AZURE AD
+---- CUSTOM DOMAINS
+---- UPGRADE LICENSE TO DO ALOT OF OTHER STUFFS
+---- CREATE USERS AND GROUPS ( must be a Global admin or user admin to manage users)
+Deleted users can be restored for 30 days
+Sign in and audit info available
+---- SELF SERVICE PASSWORD REQUEST
+BULK ACCOUNT OPERATIONS
+---- CREATE 
+---- DELETE
+
+THE LEAST PRIVILEGE PRINCIPLE : do not give rights or access to a staff more tan what he /she requires to carry out his/her job
+
+2. GOVERNANCE AND COMPLIANCE
+ --- SCAN THROUGH SLIDE
+----- ACCOUNTS AND SUBS + REGIONS  TOUR PORTAL
+
+---- CALCULATORS AND COST MGT
+---- POLICY IN ACTIONS
+
+
+3. AZURE ADMINISTRATION
+SCAN THROUGH SLIDE
+PORTAL
+POWERSHELL
+CLI
+
+4. VNET
+IP ADDRESSING
+ARM TEMPLATE SIMPLE
+ARM TEMPLATE ADVANCED
+NIC
+NSG
+FIREWALL
+DNS ZONE
+DNS
+
+5+++++++++++++++++++++++++++++++++++++++
+VNET PEERING
+VNG
+VNET TO VNET
+SITE TO SITE 
+POINT TO SITE
+6.+++++++++++++++++++++++++++++++++++++
+UDR
+LOADBALANCER
+APP GATEWAY
+
+
+7. VM & VMSS
+8.APP SERVICE
+ACS or ACI
+AKS
+9.STORAGE
+10.MONITORING
+11.BACKUP AND RECOVERY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+id: info@cloudryone.com
+pass: Inform.cloudryOne@2021.2021
+
+Qaho1318
+
+
+
+Azure Admin 1 (ARM TEMPLATES + NETWORK DESIGN) : https://kphix-my.sharepoint.com/personal/ellokoji21_kphix_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fellokoji21%5Fkphix%5Fonmicrosoft%5Fcom%2FDocuments%2FRecordings%2FAzure%20Administration%20%5F%20AZ%20104%20%5F%20EXCLUSIVE%2D20220205%5F091309%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fellokoji21%5Fkphix%5Fonmicrosoft%5Fcom%2FDocuments%2FRecordings
+  IMplement the template shared add the POC templates for assignment 
+
+Azure Admin 2 (ARM TEMPLATES + INTERSITES)
+
+1. Inttersite network design using paint with colour brown
+2. Implement the design in (1)
+3. Keep your templates in the Azure portal, on your local machine and on a cloud storage.
+
+
+Azure Admin 2 (Powershell)
+
+
